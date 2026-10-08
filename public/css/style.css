@@ -1197,6 +1197,25 @@ footer {
     }
 }
 
+.status-dot {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #22c55e !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    animation: piscar 2s infinite !important;
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+}
+
 
 /* ==========================================================
    REDMI PEQUENO - 360px
