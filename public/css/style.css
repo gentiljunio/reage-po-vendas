@@ -493,3 +493,353 @@ footer {
   opacity: 0.95;
   transform: translateY(-1px);
 }
+
+/* ==========================================================
+   MELHORIAS PARA CELULAR
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+  body {
+    padding-bottom: 20px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  /* HEADER */
+  header {
+    padding: 12px 0;
+    margin-bottom: 18px;
+  }
+
+  .header-content {
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .logo-box {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 10px;
+  }
+
+  .logo-box svg {
+    width: 19px !important;
+    height: 19px !important;
+  }
+
+  .brand-title {
+    font-size: 18px;
+    gap: 5px;
+    white-space: nowrap;
+  }
+
+  .brand-tag {
+    font-size: 8px;
+    padding: 2px 6px;
+  }
+
+  .status-badge {
+    padding: 6px 9px;
+    font-size: 10px;
+    gap: 5px;
+    white-space: nowrap;
+  }
+
+  .status-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  /* MÉTRICAS */
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .metric-card {
+    padding: 14px;
+    border-radius: 14px;
+    min-width: 0;
+  }
+
+  .metric-info {
+    min-width: 0;
+  }
+
+  .metric-info p.label {
+    font-size: 9px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
+
+  .metric-info h3 {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+
+  .metric-info p.sub {
+    font-size: 9px;
+    line-height: 1.3;
+  }
+
+  .metric-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 9px;
+  }
+
+  .metric-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* CARDS */
+  .card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .forms-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .card-header {
+    gap: 9px;
+    margin-bottom: 18px;
+  }
+
+  .card-header-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 9px;
+  }
+
+  .card-header-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card-header-title {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .card-header-sub {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  /* FORMULÁRIOS */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-group {
+    margin-bottom: 13px;
+  }
+
+  .form-group label {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+  input,
+  select {
+    min-height: 46px;
+    padding: 11px 12px;
+    font-size: 14px;
+    border-radius: 9px;
+  }
+
+  .btn {
+    min-height: 48px;
+    padding: 13px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+
+  /* TABELAS */
+  .table-card {
+    margin-bottom: 16px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 10px;
+  }
+
+  table {
+    min-width: 650px;
+  }
+
+  th {
+    padding: 10px 12px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    min-height: 36px;
+    padding: 8px 11px;
+    font-size: 11px;
+    margin-right: 3px;
+  }
+
+  .empty-state {
+    padding: 30px 15px;
+    white-space: normal;
+  }
+
+  /* MODAL */
+  #modal-editar {
+    padding: 12px;
+  }
+
+  #modal-editar .modal-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  #modal-editar .modal-header h3 {
+    font-size: 18px;
+  }
+
+  #modal-editar .modal-actions {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  #modal-editar .btn-secondary,
+  #modal-editar .btn-primary {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  /* RODAPÉ */
+  footer {
+    font-size: 11px;
+    padding: 15px 14px 0;
+    line-height: 1.5;
+  }
+}
+
+
+/* ==========================================================
+   CELULARES PEQUENOS
+   ========================================================== */
+
+@media (max-width: 400px) {
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .brand-title {
+    font-size: 16px;
+  }
+
+  .brand-tag {
+    display: none;
+  }
+
+  .status-badge span {
+    display: none;
+  }
+
+  .status-badge {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .metrics-grid {
+    gap: 8px;
+  }
+
+  .metric-card {
+    padding: 11px;
+  }
+
+  .metric-info h3 {
+    font-size: 17px;
+  }
+
+  .metric-info p.sub {
+    display: none;
+  }
+
+  .metric-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .card-header-title {
+    font-size: 15px;
+  }
+
+  .card-header-sub {
+    font-size: 9px;
+  }
+}
+
+
+/* ==========================================================
+   MELHORIA DE TOQUE EM CELULARES
+   ========================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+
+  button,
+  select,
+  input {
+    touch-action: manipulation;
+  }
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-edit,
+  .btn-delete,
+  .btn-primary,
+  .btn-secondary {
+    cursor: pointer;
+  }
+}
